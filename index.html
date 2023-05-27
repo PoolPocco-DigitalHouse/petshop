@@ -1,104 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetShop</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
+
 <body>
     <header>
-        <p>Grandes Ofertas en comedores</p>
-        <nav>
-            <ul>
-                <li>Español</li>
-                <li> ArG$</li>
-            </ul>
-        </nav>
+        <section class="header-container-top">
+            <p>Grandes Ofertas en comedores</p>
+            <nav>
+                <ul class="header-lista">
+                    <li>Español <i class="fas fa-chevron-down"></i></li>
+                    <li>ArG$ <i class="fas fa-chevron-down"></i></li>
+                </ul>
+            </nav>
+        </section>
 
         <!-- Barra menu principal -->
-        <nav>
-            <a href="#"> <img src="/img/Logo.png" alt="logo"></a>
-            <ul>
-                <li>Categorias</li>
-                <li> Pets</li>
-                <li> Nosotros</li>
-                <li>  Contáctanos  </li>
+        <nav class="header-container-bottom">
+            <div class="logo">
+                <a href="#"> <img src="./img/Logo.png" alt="logo"></a>
+            </div>
+            <ul class="menu">
+                <li><img src="./img/pawprint.png" alt="huellita"> Categorias</li>
+                <li><img src="./img/pawprint.png" alt="huellita"> Pets</li>
+                <li> <img src="./img/pawprint.png" alt="huellita">Nosotros</li>
+                <li> <img src="./img/pawprint.png" alt="huellita">
+                    Contáctanos </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <img src="/img/Hero.png" alt="banner">
+        <!-- BANNER -->
+        <section class="banner">
             <h2>¡Es un placer tenerte aquí!</h2>
-            <span>¡Comedores en descuento!</span>
-            <button>COMEDEROS</button>
+            <p>¡Comedores en descuento!</p>
+            <button class="btn-comederos">COMEDEROS</button>
         </section>
-
-        <section>
-            <img src="/img/huella.png" alt="">
+        <!-- PRODUCTOS -->
+        <section class="productos">
+            <img src="./img/huella.png" alt="huella">
             <h1>Productos destacados</h1>
-            <h3>Comedores - Accesorios - Comida</h3>
-            <div>
-                <img src="/img/churrasquito.png" alt="producto1">
-                <p>$250</p>
-            </div>
-            <div>
-                <img src="/img/comedero.png" alt="producto1">
-                <p>$150</p>
-            </div>
-            <div>
-                <img src="/img/Huesito.png" alt="producto1">
-                <p>$650</p>
+            <h3><span>Comedores</span> - <span>Accesorios</span> - <span>Comida</span></h3>
+
+            <div class="card-productos">
+                <div class="productos-items">
+                    <img src="./img/churrasquito.png" alt="producto1">
+                    <h4>Juguete Churrasquito</h4>
+                    <p>$250</p>
+                </div>
+                <div class="productos-items">
+                    <img src="./img/comedero.png" alt="producto1">
+                    <h4>Comedero para perro</h4>
+                    <p>$150</p>
+                </div>
+                <div class="productos-items">
+                    <img src="./img/Huesito.png" alt="producto1">
+                    <h4>Juguete Huesito</h4>
+                    <p>$650</p>
+                </div>
             </div>
         </section>
-
-        <section>
+        <!-- CONTACTANOS -->
+        <section class="contactanos">
             <h2>Contáctanos</h2>
-            <form action="">
+            <form class="formulario-contactanos">
                 <input type="text" placeholder="Nombre y Apellido">
                 <input type="email" placeholder="Ingresa tu correo elecrónico">
                 <input type="tel" placeholder="Teléfono">
-                <button>Resetear</button>
-                <button>Enviar</button>
+                <div class="botones">
+                    <button class="btn-resetear">Resetear</button>
+                    <button class="btn-enviar">Enviar</button>
+                </div>
             </form>
         </section>
-
-        <section>
-            <img src="/img/correo.png" alt="">
+        <!-- SUSCRIBETE -->
+        <section class="suscribete">
+            <img src="./img/correo.png" alt>
             <p>Suscríbete para más novedades</p>
-
             <div>
-                <form action="">
+                <form class="formulario-suscribete">
                     <input type="text" placeholder="Ingresa tu correo electrónico">
-                    <button>Sucribirme</button>
+                    <button class="btn-sucribirme">Sucribirme</button>
                 </form>
             </div>
+
         </section>
     </main>
 
+    <!-- INFORMACION -->
+    <section class="informacion">
+        <div>
+            <div class="location">
+                <div class="info-icon"> <img src="./img/location.png" alt=""></div>
+                <div class="info-group">
+                    <p>Localidad</p>
+                    <span>Calle - provincia</span>
+                </div>
+            </div>
+            <div class="phone-call">
+                <div class="info-icon"><img src="./img/phone-call.png" alt=""></div>
+                <div class="info-group">
+                    <p>Telefóno</p>
+                    <span>Número de teléfono</span>
+                </div>
+            </div>
+            <div class="email">
+                <div class="info-icon"> <img src="./img/correo-electronico.png" alt=""></div>
+                <div class="info-group">
+                    <p>Correo electrónico</p>
+                    <span>Dirección de correo</span>
+                </div>
+            </div>
+        </div>
+        <div class="logo">
+            <img src="./img/logoFooter.png" alt="Logo">
+        </div>
+    </section>
     <footer>
-        <div>
-            <img src="/img/location.png" alt="">
-            <span>Localidad</span>
-            <p>Calle - provincia</p>
-        </div>
-        <div>
-            <img src="/img/phone-call.png" alt="">
-            <span>Teléfono</span>
-            <p>Número de teléfono</p>
-        </div>
-        <div>
-            <img src="/img/correo-electronico.png" alt="">
-            <span>Correo Electrónico</span>
-            <p>Dirección de correo</p>
-        </div>
-        <div>
-            <img src="/img/Logo.png" alt="">
-        </div>
-        
-        <span>Todos los derechos reservados Front End</span>
+        <p>Todos los derechos reservados Front End</p>
     </footer>
 </body>
+
 </html>
